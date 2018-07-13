@@ -3,19 +3,16 @@
   <metadata>
     <id>mono-api-tools</id>
     <version>$version$</version>
-    <authors>matthew</authors>
-    <owners>matthew</owners>
-    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
-    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
-    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <authors>Matthew Leibowitz</authors>
+    <owners>mattleibow</owners>
+    <licenseUrl>https://github.com/mattleibow/mono-api-tools/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/mattleibow/mono-api-tools</projectUrl>
+    <!-- <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl> -->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Package description</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
-    <copyright>Copyright 2018</copyright>
-    <tags>Tag1 Tag2</tags>
-    <dependencies>
-      <dependency id="SampleDependency" version="1.0" />
-    </dependencies>
+    <description>A set of tools to help with .NET API development and diff-ing.</description>
+    <!-- <releaseNotes>Summary of changes made in this release of the package.</releaseNotes> -->
+    <copyright></copyright>
+    <tags>mono-api-tools, mono-api-info, mono-api-diff, mono-api-html</tags>
   </metadata>
   <files>
     <file src="output\tools\**\*.*" target="tools" />

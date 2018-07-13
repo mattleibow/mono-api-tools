@@ -87,6 +87,15 @@ Task("NuGet")
     .Does(() =>
 {
     EnsureDirectoryExists("output");
+
+    // build the "preview" nuget
+    NuGetPack("nuget/mono-api-tools.nuspec", new NuGetPackSettings {
+        Version = tag + "-preview",
+        BasePath = ".",
+        OutputDirectory = "output",
+    });
+
+    // build the "stable" nuget
     NuGetPack("nuget/mono-api-tools.nuspec", new NuGetPackSettings {
         Version = tag,
         BasePath = ".",
