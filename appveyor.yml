@@ -3,8 +3,14 @@ version: 1.0.{build}
 image: Visual Studio 2017
 
 build_script:
- - ps: .\build.ps1 --settings_skipverification=true
+  - ps: .\build.ps1 --settings_skipverification=true
 
 artifacts:
- - path: output\tools
- - path: output\mono-api-tools.*.nupkg
+  - path: output\tools
+  - path: output\mono-api-tools.*.nupkg
+
+# deploy:
+#   provider: NuGet
+#   api_key:
+#     secure: yK7P510Pam8zdQ0GkP9qHPUD+HX/Hwsl+TIDKlsY0aIOxIHWDe4wn6+RgT9ecIlK
+#   artifact: output\mono-api-tools.*.nupkg
