@@ -4,3 +4,7 @@ image: Visual Studio 2017
 
 build_script:
  - ps: .\build.ps1 --settings_skipverification=true
+
+artifacts:
+ - path: output\tools
+ - path: output\mono-api-tools.*.nupkg
